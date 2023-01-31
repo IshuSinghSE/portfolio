@@ -37,9 +37,6 @@ const Footer = () => {
           <SocialIcons href={twitter}>
             <AiFillTwitterCircle size="3rem" />
           </SocialIcons>
-          <SocialIcons href={facebook}>
-            <AiFillFacebook size="3rem" />
-          </SocialIcons>
         </SocialContainer>
       </SocialIconsContainer>
     </FooterWrapper>
