@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Space Invader",
     description:
-      "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
+      "Using Python, pygame-module, and SQL, you'll learn how to use python's pygame(gui module) to  create any game you want to build and how to integrate sql database to store data. ",
     image: "/images/space-invader.png",
     tags: ["Python", "pygame", "SQL"],
     source: "https://github.com/IshuSinghSE/space_invader/releases/tag/v1.0",
