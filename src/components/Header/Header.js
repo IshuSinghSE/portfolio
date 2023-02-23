@@ -51,9 +51,6 @@ const Header = () => (
       <SocialIcons href={twitter}>
         <AiFillTwitterCircle size="3rem" />
       </SocialIcons>
-      <SocialIcons href={facebook}>
-        <AiFillFacebook size="3rem" />
-      </SocialIcons>
     </Div3>
   </Container>
 );

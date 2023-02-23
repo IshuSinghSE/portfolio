@@ -1,4 +1,9 @@
 ## Personal Portfolio
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4113d394-081d-438c-bb0a-a21c9c438d47/deploy-status)](https://app.netlify.com/sites/portfolio10000/deploys)
-![Portfolio Website](https://i.ibb.co/wQGBfXp/portfolio.png)
 
+
+
+[![Portfolio Website](https://i.ibb.co/wQGBfXp/portfolio.png)](https://portfolio007.vercel.app)
+
+
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d5d15d6a-6175-4dfb-a96a-8ba2ca4d3f33/deploy-status)](https://app.netlify.com/sites/portfolie/deploys)
