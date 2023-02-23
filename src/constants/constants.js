@@ -5,8 +5,8 @@ export const projects = [
       "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
     image: "/images/space-invader.png",
     tags: ["Python", "pygame", "SQL"],
-    source: "https://github.com/IshuSinghSE/space_invader/",
-    visit: "https://github.com/IshuSinghSE/space_invader/releases/tag/v1.0",
+    source: "https://github.com/IshuSinghSE/space_invader/releases/tag/v1.0",
+    visit: "https://github.com/IshuSinghSE/space_invader/",
     id: 0,
   },
   //  {
