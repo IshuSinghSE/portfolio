@@ -9,6 +9,16 @@ export const projects = [
     visit: "https://github.com/IshuSinghSE/space_invader/",
     id: 0,
   },
+  {
+    title: "Face Recognition",
+    description:
+      "This project uses the Haarcascade model and OpenCV for real-time face detection and recognition from video feeds or static images. It identifies and labels faces efficiently. ",
+    image: "/images/face-recognition.png",
+    tags: ["Python", "Computer Vision", "AI ML"],
+    source: "https://github.com/IshuSinghSE/face-recognition/",
+    visit: "#",
+    id: 1,
+  }
   //  {
   //   title: 'MERN Memories',
   //   description: "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
