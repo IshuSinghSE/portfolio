@@ -27,8 +27,15 @@ jobs:
       - name: Export the project
         run: npm run export
 
-      - name: Remove existing out directory
-        run: rm -rf out
+      - name: Verify out directory
+        run: |
+          if [ ! -d "out" ]; then
+            echo "Error: out directory does not exist."
+            exit 1
+          fi
+
+      - name: Remove existing gh-pages directory
+        run: rm -rf gh-pages
 
       - name: Clone GitHub Pages repository
         run: git clone --branch=main https://github.com/IshuSinghSE/IshuSinghSE.github.io.git gh-pages
