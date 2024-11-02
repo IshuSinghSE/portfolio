@@ -9,9 +9,9 @@ const nextConfig = {
   images: {
     unoptimized: true, // Disable default image optimization
   },
-  assetPrefix: isProd ? '/your-repository-name/' : '',
-  basePath: isProd ? '/your-repository-name' : '',
-  output: 'export'
+  assetPrefix: isProd ? '/IshuSinghSE.github.io/' : '/',
+  basePath: isProd ? '/IshuSinghSE.github.io' : '',
+  output: 'standalone'
 };
 
 module.exports = nextConfig

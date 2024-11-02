@@ -83,5 +83,5 @@ export const socialmedia = [
   { name: "Instagram", link: "https://www.instagram.com/wth_ishu/" },
   { name: "Facebook", link: "https://www.facebook.com/itsashu13/" },
   { name: "Twitter", link: "https://www.twitter.com/wth_ishu/" },
-  {name:"linkedin",link:"https://www.linkedin.com/in/wth-ishu/"}
+  { name: "LinkedIn", link: "https://www.linkedin.com/in/wth-ishu/" }
 ];

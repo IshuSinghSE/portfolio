@@ -1,7 +1,7 @@
 {
   "name": "nextjs",
   "version": "0.1.0",
-  "homepage": "https://IshuSinghSE/IshuSinghSE.github.io",
+  "homepage": "https://IshuSinghSE.github.io/",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -13,10 +13,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "13.1.2",
+    "next/font": "13.1.2",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.2",
-    "next": "13.1.2",
+    "next": "^15.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
@@ -24,6 +24,8 @@
     "styled-normalize": "^8.0.7"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
     "gh-pages": "^6.2.0"
   }
 }
