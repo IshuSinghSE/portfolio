@@ -10,8 +10,8 @@ const nextConfig = {
     unoptimized: true, // Disable default image optimization
   },
   assetPrefix: '/portfolio/',
-  basePath: '/portfolio',
-  output: 'export',
+  basePath: '',
+  output: 'standalone',
 };
 
 module.exports = nextConfig
