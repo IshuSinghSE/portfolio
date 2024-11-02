@@ -13,7 +13,8 @@ const Hero = () => {
           Hi, I&apos;m Ishu <br />
         </SectionTitle>
         <SectionText>
-          Dive into my world of tech magic! From coding spells to digital enchantments, explore my projects and let&apos;s create some tech sorcery together!
+          Explore my projects and professional journey. Keep pushing forward and never stop learning!
+          Stay curious and keep coding!
         </SectionText>
         <Link href="/Resume.pdf" passHref>
           <Button>View Resume</Button>
