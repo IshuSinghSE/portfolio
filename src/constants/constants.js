@@ -27,7 +27,7 @@ export const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
     source:
       "https://github.com/IshuSinghSE/HtmlCanvas/tree/master/ParticleText",
-    visit: "https://ishusinghse.github.io/ParticleText/index.html",
+    visit: " https://ishusinghse.github.io/HtmlCanvas/ParticleText",
     id: 3,
   },
   {
@@ -38,7 +38,7 @@ export const projects = [
     tags: ["HTML", "SCSS", "JavaScript"],
     source:
       "https://github.com/IshuSinghSE/HtmlCanvas/tree/master/ParticleImage/basepp",
-    visit: "https://ishusinghse.github.io/particleImage/index.html",
+    visit: "https://ishusinghse.github.io/HtmlCanvas/ParticleImage/basepp",
     id: 4,
   },
   {
@@ -60,6 +60,8 @@ export const TimeLineData = [
   { year: 2021, text: "Build a game in pygame" },
   { year: 2022, text: "Learn Django" },
   { year: 2023, text: "Learn React" },
+  { year: 2024, text: "Learn NextJS" },
+  { year: 2024, text: "Contribute to Open Source projects" },
 ];
 
 export const facebook = "https://www.facebook.com/itsashu13/";
@@ -72,9 +74,14 @@ export const instagram = "https://www.instagram.com/wth_ishu/";
 
 export const snapchat = "https://www.snapchat.com/ashusingh.13/";
 
+export const linkedin = "https://www.linkedin.com/in/wth-ishu/";
+
+export const email = "ishuu.singh13@gmail.com";
+
 export const socialmedia = [
   { name: "Github", link: "https://www.github.com/IshuSinghSE/" },
   { name: "Instagram", link: "https://www.instagram.com/wth_ishu/" },
   { name: "Facebook", link: "https://www.facebook.com/itsashu13/" },
   { name: "Twitter", link: "https://www.twitter.com/wth_ishu/" },
+  {name:"linkedin",link:"https://www.linkedin.com/in/wth-ishu/"}
 ];

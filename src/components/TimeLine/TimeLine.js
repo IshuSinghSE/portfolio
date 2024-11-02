@@ -72,7 +72,7 @@ const Timeline = () => {
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
-          {TimeLineData.map((item, index) => (
+          {TimeLineData.slice(0).reverse().map((item, index) => (
             <CarouselMobileScrollNode
               key={index}
               final={index === TOTAL_CAROUSEL_COUNT - 1}
@@ -112,7 +112,7 @@ const Timeline = () => {
                         <stop
                           offset="0.79478"
                           stop-color="white"
-                          stop-opacity="0"
+                          stopOpacity="0"
                         />
                       </linearGradient>
                     </defs>
@@ -125,7 +125,7 @@ const Timeline = () => {
         </>
       </CarouselContainer>
       <CarouselButtons>
-        {TimeLineData.map((index) => (
+        {TimeLineData.slice(0).reverse().map((_, index) => (
           <CarouselButton
             key={index}
             index={index}

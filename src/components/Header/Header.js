@@ -3,7 +3,7 @@ import React from 'react';
 import { AiFillAlert, AiFillFacebook, AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle, AiOutlineInstagram } from 'react-icons/ai';
 import { DiCssdeck, DiSnapSvg } from 'react-icons/di';
 
-import {  facebook, instagram, github, twitter } from '@/src/constants/constants';
+import {  facebook, instagram, github, twitter, linkedin } from '@/src/constants/constants';
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
 
 const Header = () => (
@@ -44,6 +44,9 @@ const Header = () => (
 
       <SocialIcons href={github}>
         <AiFillGithub size="3rem" />
+      </SocialIcons>
+      <SocialIcons href={linkedin}>
+        <AiFillLinkedin size="3rem" />
       </SocialIcons>
       <SocialIcons href={instagram}>
         <AiFillInstagram size="3rem" />

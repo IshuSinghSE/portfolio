@@ -8,6 +8,8 @@ import {
   instagram,
   github,
   twitter,
+  linkedin,
+  email,
 } from "@/src/constants/constants";
 
 const Footer = () => {
@@ -18,8 +20,8 @@ const Footer = () => {
           <LinkTitle>
             <AiOutlineMail size="1.5rem" /> E-mail{" "}
           </LinkTitle>
-          <LinkItem href="mailto:ishu.111636@yahoo.com">
-            Ishu.111636@yahoo.com
+          <LinkItem href={`mailto:${email}`}>
+          {email}
           </LinkItem>
         </LinkColumn>
       </LinkList>
@@ -30,6 +32,9 @@ const Footer = () => {
         <SocialContainer>
           <SocialIcons href={github}>
             <AiFillGithub size="3rem" />
+          </SocialIcons>
+          <SocialIcons href={linkedin}>
+            <AiFillLinkedin size="3rem" />
           </SocialIcons>
           <SocialIcons href={instagram}>
             <AiFillInstagram size="3rem" />
