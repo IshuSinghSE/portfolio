@@ -30,13 +30,19 @@ jobs:
       - name: Remove existing out directory
         run: rm -rf out
 
+      - name: Clone GitHub Pages repository
+        run: git clone --branch=main https://github.com/IshuSinghSE/IshuSinghSE.github.io.git gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Copy built files
+        run: cp -r out/* gh-pages/
+
       - name: Deploy to GitHub Pages
         run: |
+          cd gh-pages
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git clone --branch=main https://github.com/IshuSinghSE/IshuSinghSE.github.io.git out
-          cp -r out/* out/
-          cd out
           git add .
           git commit -m 'Deploy Next.js app'
           git push origin main
