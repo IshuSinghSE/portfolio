@@ -27,6 +27,9 @@ jobs:
       - name: Export the project
         run: npm run export
 
+      - name: Remove existing out directory
+        run: rm -rf out
+
       - name: Deploy to GitHub Pages
         run: |
           git config --global user.name 'github-actions[bot]'
