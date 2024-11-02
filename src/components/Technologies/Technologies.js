@@ -8,7 +8,7 @@ const Technologies = () => (
     <SectionDivider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I&pos;ve worked with a range of technologies in the web development world.
+      {/* I&pos;ve worked with a range of technologies in the web development world. */}
     </SectionText>
     <List>
       <ListItem>
