@@ -1,15 +1,14 @@
 {
-  "name": "nextjs",
-  "version": "0.1.0",
-  "homepage": "https://IshuSinghSE.github.io/",
+  "name": "portfolio",
+  "version": "1.0.0",
+  "homepage": "https://IshuSinghSE.github.io/portfolio",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "predeploy": "npm run build",
-    "deploy": "npm run build && npm run export && touch ./out/.nojekyll && gh-pages -d out -t true",
+    "deploy": "next build && next export && gh-pages -d out",
     "lint": "next lint"
   },
   "dependencies": {

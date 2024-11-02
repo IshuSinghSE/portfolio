@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Space Invader",
     description:
-      "Using Python, pygame-module, and SQL, you'll learn how to use python's pygame(gui module) to  create any game you want to build and how to integrate sql database to store data. ",
+      "Using Python, pygame-module, and SQL, you'll learn how to use Python's pygame (GUI module) to create any game you want to build and how to integrate SQL database to store data.",
     image: "/images/space-invader.png",
     tags: ["Python", "pygame", "SQL"],
     source: "https://github.com/IshuSinghSE/space_invader/releases/tag/v1.0",
@@ -12,7 +12,7 @@ export const projects = [
   {
     title: "Face Recognition",
     description:
-      "This project uses the Haarcascade model and OpenCV for real-time face detection and recognition from video feeds or static images. It identifies and labels faces efficiently. ",
+      "This project uses the Haarcascade model and OpenCV for real-time face detection and recognition from video feeds or static images. It identifies and labels faces efficiently.",
     image: "/images/face-recognition.png",
     tags: ["Python", "Computer Vision", "AI ML"],
     source: "https://github.com/IshuSinghSE/face-recognition/",
@@ -22,18 +22,18 @@ export const projects = [
   {
     title: "Particle Text",
     description:
-      "This is a simple single-player sliding block puzzle game. The game's objective is to slide numbered tiles on a grid to combine them to create a tile with the number 2048.",
+      "This project creates particle text effects using HTML, CSS, and JavaScript. It demonstrates how to manipulate canvas elements to achieve dynamic visual effects.",
     image: "/images/particle-image.png",
     tags: ["HTML", "CSS", "JavaScript"],
     source:
       "https://github.com/IshuSinghSE/HtmlCanvas/tree/master/ParticleText",
-    visit: " https://ishusinghse.github.io/HtmlCanvas/ParticleText",
+    visit: "https://ishusinghse.github.io/HtmlCanvas/ParticleText",
     id: 3,
   },
   {
     title: "Pixeture",
     description:
-      " Pixeture is a simple image editor that allows you to draw on an image using different colors and Symbols. Use can also drap and drop the image or image url to edit.",
+      "Pixeture is a simple image editor that allows you to draw on an image using different colors and symbols. Users can also drag and drop the image or image URL to edit.",
     image: "/images/pixeture.png",
     tags: ["HTML", "SCSS", "JavaScript"],
     source:
@@ -55,13 +55,13 @@ export const projects = [
 
 export const TimeLineData = [
   { year: 2018, text: "Started my journey" },
-  { year: 2019, text: "Learn JavaScript" },
-  { year: 2020, text: "Learn Python" },
-  { year: 2021, text: "Build a game in pygame" },
-  { year: 2022, text: "Learn Django" },
-  { year: 2023, text: "Learn React" },
-  { year: 2024, text: "Learn NextJS" },
-  { year: 2024, text: "Contribute to Open Source projects" },
+  { year: 2019, text: "Learned JavaScript" },
+  { year: 2020, text: "Learned Python" },
+  { year: 2021, text: "Built a game in pygame" },
+  { year: 2022, text: "Learned Django" },
+  { year: 2023, text: "Learned React" },
+  { year: 2024, text: "Learned NextJS" },
+  { year: 2024, text: "Contributed to Open Source projects" },
 ];
 
 export const facebook = "https://www.facebook.com/itsashu13/";
