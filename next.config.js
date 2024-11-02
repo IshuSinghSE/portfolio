@@ -9,7 +9,7 @@ const nextConfig = {
   images: {
     unoptimized: true, // Disable default image optimization
   },
-  assetPrefix: '/portfolio/',
+  assetPrefix: '',
   basePath: '',
   output: 'standalone',
 };
