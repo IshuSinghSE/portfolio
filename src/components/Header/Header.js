@@ -5,6 +5,7 @@ import { DiCssdeck, DiSnapSvg } from 'react-icons/di';
 
 import {  facebook, instagram, github, twitter, linkedin } from '@/src/constants/constants';
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
+import Image from 'next/image';
 
 const Header = () => (
   <Container>
@@ -18,8 +19,8 @@ const Header = () => (
           marginBottom: "20px",
         }}
       >
-        <DiCssdeck size="3rem" />
-        <Span>Portfolio</Span>
+        <Image src={'/logo.svg'} alt="Logo" width={28} height={28} />
+        <Span style={{marginLeft:'8px'}}>Portfolio</Span>
       </Link>
     </Div1>
 
@@ -36,19 +37,13 @@ const Header = () => (
     </Div2>
 
     <Div3>
-      {/* {socialmedia.map((social, index) => (
-        <SocialIcons href={social.link} key={index}>
-          <AiFillAlert size="3rem" />
-        </SocialIcons>
-      ))} */}
-
-      <SocialIcons href={github}>
+      <SocialIcons href={github} hoverColor="#eee">
         <AiFillGithub size="3rem" />
       </SocialIcons>
-      <SocialIcons href={linkedin}>
+      <SocialIcons href={linkedin} hoverColor="#0A66C2">
         <AiFillLinkedin size="3rem" />
       </SocialIcons>
-      <SocialIcons href={twitter}>
+      <SocialIcons href={twitter} hoverColor="#1DA1F2">
         <AiFillTwitterCircle size="3rem" />
       </SocialIcons>
     </Div3>
