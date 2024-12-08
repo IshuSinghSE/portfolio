@@ -21,7 +21,7 @@ const Footer = () => {
             <AiOutlineMail size="1.5rem" /> E-mail{" "}
           </LinkTitle>
           <LinkItem href={`mailto:${email}`}>
-          {email}
+            {email}
           </LinkItem>
         </LinkColumn>
       </LinkList>
@@ -30,16 +30,16 @@ const Footer = () => {
           <Slogan>Learn to Innovate.</Slogan>
         </CompanyContainer>
         <SocialContainer>
-          <SocialIcons href={github}>
+          <SocialIcons href={github} hoverColor="#333">
             <AiFillGithub size="3rem" />
           </SocialIcons>
-          <SocialIcons href={linkedin}>
+          <SocialIcons href={linkedin} hoverColor="#0077b5">
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
-          <SocialIcons href={instagram}>
+          <SocialIcons href={instagram} hoverColor="#e4405f">
             <AiFillInstagram size="3rem" />
           </SocialIcons>
-          <SocialIcons href={twitter}>
+          <SocialIcons href={twitter} hoverColor="#1da1f2">
             <AiFillTwitterCircle size="3rem" />
           </SocialIcons>
         </SocialContainer>
