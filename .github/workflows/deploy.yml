@@ -61,8 +61,9 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git config --global credential.helper 'store --file=.git/credentials'
           echo "https://${{ secrets.GH_TOKEN }}:@github.com" > .git/credentials
+          ORIGINAL_COMMIT_MESSAGE=$(git log -1 --pretty=%B)
           git add .
-          git commit -m 'Deploy Next.js app'
+          git commit -m "Deploy Next.js app - deployed due to: $ORIGINAL_COMMIT_MESSAGE"
           git push origin gh-pages --force
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
