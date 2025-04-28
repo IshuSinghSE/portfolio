@@ -61,6 +61,16 @@ export const projects = [
     visit: "https://nexshare.vercel.app/",
     id: 6,
   },
+  {
+    title: "GDG USAR WEBSITE",
+    description:
+      "A modern and responsive website for GDG USAR, built using Next.js and TailwindCSS. It showcases events, team members, and resources for the community.",
+    image: "/images/gdg-usar.webp",
+    tags: ["NextJS", "TailwindCSS", "SanityCMS", "GSAP"],
+    source: "https://github.com/aryanbuilds/GDG_USAR_website",
+    visit: "https://gdgusar.vercel.app/",
+    id: 7,
+  },
 ];
 
 export const TimeLineData = [
@@ -93,5 +103,5 @@ export const socialmedia = [
   { name: "Instagram", link: "https://www.instagram.com/wth_ishu/" },
   { name: "Facebook", link: "https://www.facebook.com/wthishu/" },
   { name: "Twitter", link: "https://www.twitter.com/wth_ishu/" },
-  { name: "LinkedIn", link: "https://www.linkedin.com/in/wth-ishu/" }
+  { name: "LinkedIn", link: "https://www.linkedin.com/in/wth-ishu/" },
 ];

@@ -6,12 +6,9 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  images: {
-    unoptimized: true, // Disable default image optimization
-  },
-  assetPrefix: '',
   basePath: '',
   output: 'standalone',
+  // SWC is disabled due to the presence of a custom Babel configuration (.babelrc)
 };
 
-module.exports = nextConfig
+module.exports = nextConfig;
