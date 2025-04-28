@@ -13,45 +13,34 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
         with:
-          node-version: '14'
+          bun-version: latest
+
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.bun
+          key: ${{ runner.os }}-bun-${{ hashFiles('**/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-bun-
 
       - name: Install dependencies
-        run: npm install
+        run: bun install
 
-      - name: Build the project
-        run: npm run build
-
-      - name: Export the project
-        run: npm run export
-
-      - name: Verify out directory
+      - name: Build and export the project
         run: |
-          if [ ! -d "out" ]; then
-            echo "Error: out directory does not exist."
-            exit 1
-          fi
-
-      - name: Remove existing gh-pages directory
-        run: rm -rf gh-pages
-
-      - name: Clone GitHub Pages repository
-        run: git clone --branch=main https://github.com/IshuSinghSE/IshuSinghSE.github.io.git gh-pages
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-
-      - name: Copy built files
-        run: cp -r out/* gh-pages/
+          bun run build
+          bun run export
 
       - name: Deploy to GitHub Pages
         run: |
-          cd gh-pages
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git config --global credential.helper 'store --file=.git/credentials'
-          echo "https://${{ secrets.GH_TOKEN }}:@github.com" > .git/credentials
+          git clone --branch=main https://github.com/IshuSinghSE/IshuSinghSE.github.io.git gh-pages
+          cp -r out/* gh-pages/
+          cd gh-pages
           git add .
           git commit -m 'Deploy Next.js app'
           git push origin main
