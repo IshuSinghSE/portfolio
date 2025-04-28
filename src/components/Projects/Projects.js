@@ -3,6 +3,7 @@ import React from 'react';
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
+import Link from 'next/link';
 
 
 const Projects = () => (
@@ -10,9 +11,11 @@ const Projects = () => (
     <SectionDivider />
     <SectionTitle main>Projects</SectionTitle>
     <GridContainer>
-      {projects.slice().reverse().map(({id, image, title, description, tags, source, visit }) => (
+      {projects.slice().reverse().map(({ id, image, title, description, tags, source, visit }) => (
         <BlogCard key={id}>
-          <Img src={image} />
+          <Link href={visit} passHref>
+            <Img src={image} alt={title} />
+          </Link>
           <TitleContent>
             <HeaderThree title>{title}</HeaderThree>
             <Hr />
@@ -21,7 +24,7 @@ const Projects = () => (
           <div>
             <TitleContent>Stack</TitleContent>
             <TagList>
-              {tags.map((tag, i) =>(
+              {tags.map((tag, i) => (
                 <Tag key={i}>{tag}</Tag>
               ))}
             </TagList>
