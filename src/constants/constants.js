@@ -71,6 +71,16 @@ export const projects = [
     visit: "https://gdgusar.vercel.app/",
     id: 7,
   },
+  {
+    title: "StreamVibz",
+    description:
+      "StreamVibz is a modern platform for streaming and sharing music. Built with Next.js and TailwindCSS, it offers a seamless user experience for discovering and enjoying music.",
+    image: "/images/streamvibz.webp",
+    tags: ["NextJS", "TailwindCSS", "Firebase"],
+    source: "https://github.com/IshuSinghSE/streamvibe",
+    visit: "https://streamvibz.vercel.app/",
+    id: 8,
+  },
 ];
 
 export const TimeLineData = [
