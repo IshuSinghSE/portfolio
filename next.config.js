@@ -6,11 +6,12 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  images: {
+    unoptimized: true, // Disable default image optimization
+  },
+  assetPrefix: '',
   basePath: '',
   output: 'standalone',
-  images: {
-    unoptimized: true,
-  },
 };
 
-module.exports = nextConfig;
+module.exports = nextConfig
