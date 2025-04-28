@@ -18,6 +18,11 @@ jobs:
         with:
           node-version: '14'
 
+      - name: Clean environment
+        run: |
+          rm -rf node_modules package-lock.json
+          npm cache clean --force
+
       - name: Install dependencies
         run: npm install
 
