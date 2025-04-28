@@ -58,6 +58,6 @@ jobs:
           echo "https://${{ secrets.GH_TOKEN }}:@github.com" > .git/credentials
           git add .
           git commit -m 'Deploy Next.js app'
-          git push origin main
+          git push origin gh-pages --force
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
