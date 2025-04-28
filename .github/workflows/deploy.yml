@@ -46,6 +46,11 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
+      - name: Create gh-pages branch if it doesn't exist
+        run: |
+          cd gh-pages
+          git checkout gh-pages || git checkout --orphan gh-pages
+
       - name: Copy built files
         run: cp -r out/* gh-pages/
 
