@@ -21,7 +21,6 @@ jobs:
       - name: Clean environment
         run: |
           rm -rf node_modules bun.lockb
-          bun cache clean
 
       - name: Install dependencies
         run: bun install
