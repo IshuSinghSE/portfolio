@@ -77,7 +77,7 @@ export const TimeLineData = [
   { year: 2018, text: "Started my journey" },
   { year: 2019, text: "Learned JavaScript" },
   { year: 2020, text: "Learned Python" },
-  { year: 2021, text: "Built a game in pygame" },
+  { year: 2021, text: "Built game using pygame" },
   { year: 2022, text: "Learned Django & SQL" },
   { year: 2023, text: "Learned React & SCSS" },
   { year: 2024, text: "Learned NextJS & Tailwincss" },
