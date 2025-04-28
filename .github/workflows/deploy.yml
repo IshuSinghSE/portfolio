@@ -67,7 +67,7 @@ jobs:
           git config --global credential.helper 'store --file=.git/credentials'
           echo "https://${{ secrets.GH_TOKEN }}:@github.com" > .git/credentials
           git add .
-          git commit -m "Deploy Next.js app - deployed due to: $ORIGINAL_COMMIT_MESSAGE"
+          git commit -m "Redeployed due to: $ORIGINAL_COMMIT_MESSAGE"
           git push origin gh-pages --force
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
