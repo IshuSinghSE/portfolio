@@ -42,15 +42,12 @@ jobs:
             exit 1
           fi
 
+      - name: Remove existing gh-pages directory
+        run: rm -rf gh-pages
+
       - name: Deploy to GitHub Pages
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git clone --branch=main https://github.com/IshuSinghSE/IshuSinghSE.github.io.git gh-pages
-          cp -r out/* gh-pages/
-          cd gh-pages
-          git add .
-          git commit -m 'Deploy Next.js app'
-          git push origin main
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
+          publish_dir: ./out
+          destination_dir: .
