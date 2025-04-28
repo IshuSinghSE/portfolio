@@ -8,7 +8,9 @@ const nextConfig = {
   },
   basePath: '',
   output: 'standalone',
-  // SWC is disabled due to the presence of a custom Babel configuration (.babelrc)
+  images: {
+    unoptimized: true,
+  },
 };
 
 module.exports = nextConfig;
