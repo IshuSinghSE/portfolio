@@ -80,7 +80,25 @@ export const projects = [
     source: "https://github.com/IshuSinghSE/streamvibe",
     visit: "https://streamvibz.vercel.app/",
     id: 8,
+  },{
+    title: "Bloomsplash",
+    description:
+      "Bloomsplash is a modern Ultra 4K Wallpapers Discover breathtaking ultra-high-definition wallpapers crafted for perfection on every device. Experience stunning visuals that elevate your screen's aesthetic.",
+    image: "/images/bloomsplash.webp",
+    tags: ["ReactJS", "TailwindCSS","TypeScript", "Firebase"],
+    source: "https://github.com/IshuSinghSE/wallpaperz",
+    visit: "https://bloomsplash.vercel.app/",
+    id: 9,
   },
+  {
+    id: 10,
+    title: "EnamelX",
+    description:"Revolutionizing dentistry through the power of AI. EnamelX leverages advanced artificial intelligence to assist dentists in diagnosing and planning treatments, enhancing patient care and outcomes.",
+    image: "/images/enamelx.webp",
+    tags: ["NextJS", "TailwindCSS", "AI ML", "TypeScript"],
+    source: "https://github.com/IshuSinghSE/enamelx",
+    visit: "https://enamelx.vercel.app/",
+  }
 ];
 
 export const TimeLineData = [
