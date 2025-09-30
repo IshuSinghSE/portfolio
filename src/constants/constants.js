@@ -31,6 +31,15 @@ export const projects = [
     id: 3,
   },
   {
+    title: "Cursor Hover Mask Effect",
+    description:
+      "A modern and interactive cursor hover mask effect using Motion, SCSS, and Next.js. This effect enhances user experience by providing visual feedback on hover.",
+    image: "/images/cursor-hover-mask-effect.gif",
+    tags: ["Motion", "SCSS", "NextJS"],
+    source: "https://github.com/IshuSinghSE/cursor-hover-mask-effect",
+    visit: "https://ishusinghse.github.io/cursor-hover-mask-effect",
+  },
+  {
     title: "Pixeture",
     description:
       "Pixeture is a simple image editor that allows you to draw on an image using different colors and symbols. Users can also drag and drop the image or image URL to edit.",
